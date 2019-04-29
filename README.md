@@ -13,7 +13,7 @@ To create a new HOT documentation site clone this repo:
 git clone https://github.com/hotosm/hot-docs-template.git 
 ```
 
-Then clone the HOT theme 
+Then clone the HOT hugo-book theme 
 ```
 cd hot-docs-template
 git submodule add https://github.com/hotosm/hugo-book themes/book
@@ -77,6 +77,14 @@ _index.md ---> https://example.com/
 about.md ---> https://example.com/pages/about
 
 contact.md ---> https://example.com/pages/contact
+
+
+#### Alternative Content structures
+
+Hugo provides other ways to organize content in two other ways: Leaf Bundles and Branch Bundles
+
+Read more about page bundling here:
+[https://gohugo.io/content-management/page-bundles/](https://gohugo.io/content-management/page-bundles/)
 
 
 #### Front Matter
@@ -160,3 +168,38 @@ e.g.
 https://example.com/pages/about
 
 https://example.com/fr/pages/a-propos
+
+
+### Local development
+
+To build this site locally an installation of Hugo is required. Hugo binaries for all platforms are available here:
+
+[https://github.com/gohugoio/hugo/releases](https://github.com/gohugoio/hugo/releases)
+
+
+Clone this repo with the ``` --recurse-submodules ```:
+
+```sh
+git clone --recurse-submodules https://github.com/hotosm/my-documentation-repo.git
+```
+
+change directory into the cloned repo and run Hugo
+
+```sh
+cd my-documentation-repo
+hugo serve
+```
+
+This builds and runs a local webserver with hot-reloading for local content development.
+
+If the default port is available you can navigate to the built development site at http://localhost:1313 in your browser.
+If 1313 is already in use by another program hugo will choose another port and return it to the stdout of your terminal
+e.g.
+
+```sh
+Environment: "development"
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at //localhost:58696/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+```

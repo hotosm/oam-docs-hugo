@@ -22,16 +22,59 @@ git submodule add https://github.com/hotosm/hugo-book themes/book
 This template automates build and deployment using [CircleCI](https://circleci.com/). To take advantage of this functionality, a github repository and access to CircleCI is required. 
 
 
-## Building a site
+## Building a new site
 
 # Tutorial
 
+1. Clone this repo and create a new github repository to host the site content. 
+```
+git clone https://github.com/hotosm/hot-docs-template.git my-docs-site
+cd my-docs-site
+git submodule add https://github.com/hotosm/hugo-book themes/book
+git 
+```
+
+2. Update site configuration
+
+```toml
+languageCode = "en-us"
+title = "My Docs Site" <-- site name
+theme = "book"
+DefaultContentLanguage = "en"
+relativeurls = true
+enableGitInfo = true
+
+[params]
+    BookRepo = "https://github.com/hotosm/my-docs-site"  <-- GitHub repo address
+    BookShowToC = false
+    BookEditPath = "/edit/master/content/"
+
+[imaging]
+    resampleFilter = "box"
+    quality = 75
+```
+
+3. Set up CircleCI integration
+
+      i. Launch your github repo as a project on CircleCI
+
+      ii. Add an SSH key to the github repository with 'write' access. follow this guide:
+          [https://circleci.com/docs/2.0/add-ssh-key/](https://circleci.com/docs/2.0/add-ssh-key/)
+      
+      iii. Add the SSH keygen fingerprint to the circleCI .circleci/config.yml file in your repo
+      e.g. 
+      ```
+          - add_ssh_keys:
+              fingerprints:
+                - "b4:94:b8:6b:f4:0b:b5:0e:40:ba:1c:f7:b8:d9:d4:4c"
+      ```
 
 
+## In-depth guide/Customizing your site
 
 ### Configuration
 
-Site level settings are stored in the [config.toml](./config.toml) at the root of this project
+Site level settings are stored in the [config.toml](./config.toml) at the root of this project. Other than customizing some features of the site you need to change the ``` title ``` and ``` BookRepo ``` keys.
 
 ```toml
 languageCode = "en-us"
@@ -130,6 +173,35 @@ bookShowToC: True
 ```
 
 
+Alternatively if you wish to have the Table of Contents always on by default across the site you can add a ``` params ``` ``` BookShowToC ``` value in the site config.toml
+
+e.g. 
+```toml
+[params]
+  BookShowToC = true
+```
+
+
+#### Page Order
+
+Hugo will use the MarkDown document's name as its first method of sorting content. e.g. about.md will come before contact.md.  You can override this and at your own sort order to documents by using the ``` weight ``` option in the frontmatter. For the weight value lower ranks higher so 1 will come before 2 before 3 etc. Weighting is scoped to the directory it is within, when using nested structure the order will only relate to the content order within that section.
+
+```md
+---
+
+title: Summer Essay - How I Spent My Summer Vacation
+weight: 1
+
+---
+
+# Article Title
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna 
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+...
+```
+
 ### Multi-language Sites
 
 This template allows for building multi-language sites by simply creating directories for each language needed, following the same directory structure as a single language site. an example folder structure is as follows:
@@ -170,6 +242,14 @@ https://example.com/pages/about
 https://example.com/fr/pages/a-propos
 
 
+### CircleCI
+
+CircleCI manages the build and deployment process to allow continuous deployment of the site on new changes. In the default configuration listed here CircleCI will only fire on commits on the master branch and will deploy to the gh-pages branch.  Both these branches are required for this configuration to properly function.  If you wish to skip the build and deploy process on a commit simply add ``` [ci skip] ``` to you commit message in git. e.g.
+
+```
+git commit -m "added new content [ci skip]"
+```
+
 ### Local development
 
 To build this site locally an installation of Hugo is required. Hugo binaries for all platforms are available here:
@@ -203,3 +283,6 @@ Running in Fast Render Mode. For full rebuilds on change: hugo server --disableF
 Web Server is available at //localhost:58696/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
 ```
+
+
+### Contributing

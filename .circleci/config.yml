@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/build
     docker:
-      - image: cibuilds/hugo:0.54
+      - image: cibuilds/hugo:latest
 
     steps:
       - attach_workspace:

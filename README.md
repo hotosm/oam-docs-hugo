@@ -202,6 +202,13 @@ aliqua. Ut enim ad minim veniam, quis nostrud exercitation
 ...
 ```
 
+
+
+### Search
+
+Full text search is supported using [lunr.js](https://lunrjs.com/).  Multi language support is limited to those supported by [lunr-languages](https://github.com/MihaiValentin/lunr-languages). If content is provided in that language a search index will not be created and the search bar will not appear in the nav bar.
+
+
 ### Multi-language Sites
 
 This template allows for building multi-language sites by simply creating directories for each language needed, following the same directory structure as a single language site. an example folder structure is as follows:

@@ -41,7 +41,7 @@ def main():
             for filename in files:
                 ext = os.path.splitext(filename)[1]
                 if ext == '.md':
-                    content = clean_markdown(path, filename, images)
+                    content = clean_markdown(path, filename, images, default_lang=default_lang)
                     if content:
                         contents.append({'name':filename, 'content': content})
                 else:
@@ -69,7 +69,7 @@ def main():
                 for filename in files:
                     ext = os.path.splitext(filename)[1]
                     if ext == '.md':
-                        content = clean_markdown(path, filename)
+                        content = clean_markdown(path, filename, lang_key ,default_lang)
                         if content:
                             contents.append({'name':filename, 'content': content})
                     else:
@@ -82,8 +82,7 @@ def main():
                 f.write(full_pdf_content)
 
 
-def clean_markdown(path, filename, images, lang=""):
-    default_lang = ''
+def clean_markdown(path, filename, images, lang="", default_lang = "en"):
     post = frontmatter.load(os.path.join(path, filename))
     if post.content:
         title = post.metadata.get('title', '')
@@ -98,7 +97,7 @@ def clean_markdown(path, filename, images, lang=""):
             guide['content'] += '# {0} \n\n'.format(title)
         guide['content'] += content
         if lang and lang != default_lang:
-            out_file = os.path.join('pdf-build',lang, guide['filename'])
+            out_file = os.path.join('pdf-build', lang, guide['filename'])
         else: 
             out_file = os.path.join('pdf-build', guide['filename'])
         with open(out_file, 'w') as f:

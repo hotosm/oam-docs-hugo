@@ -9,6 +9,7 @@ enableGitInfo = true
     BookRepo = "https://github.com/hotosm/" #<-- change me
     BookShowToC = false
     BookEditPath = "/edit/master/content/"
+    matomoSiteID =                 #<-- Add matomo site ID 
 
 [imaging]
     resampleFilter = "box"

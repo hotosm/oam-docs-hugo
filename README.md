@@ -48,6 +48,7 @@ enableGitInfo = true
     BookRepo = "https://github.com/hotosm/my-docs-site"  <-- GitHub repo address
     BookShowToC = false
     BookEditPath = "/edit/master/content/"
+    matomoSiteID = <-- Add matomo site ID 
 
 [imaging]
     resampleFilter = "box"
@@ -88,6 +89,7 @@ enableGitInfo = true
     BookRepo = "https://github.com/hotosm/toolkit-site"  <-- change me
     BookShowToC = false
     BookEditPath = "/edit/master/content/"
+    matomoSiteID = <-- Add matomo site ID 
 
 [imaging]
     resampleFilter = "box"

@@ -62,7 +62,7 @@ enableGitInfo = true
       ii. Add an SSH key to the github repository with 'write' access. follow this guide:
           [https://circleci.com/docs/2.0/add-ssh-key/](https://circleci.com/docs/2.0/add-ssh-key/)
       
-      iii. Add the SSH keygen fingerprint to the circleCI .circleci/config.yml file in your repo
+      iii. Add the SSH keygen fingerprint to the circleCI ``` .circleci/config.yml ``` file in your repo
       e.g. 
       ```
           - add_ssh_keys:
@@ -161,7 +161,7 @@ aliqua. Ut enim ad minim veniam, quis nostrud exercitation
 
 #### Table of Contents
 
-By defualt in the main project config.toml file a right hand side Table of Contents is disabled.  If you need this enabled project-wide you can change this value to ``` true ``` in the TOML file or override in individual Markdown file by adding the ```  ``` option to the front matter. Table of contents will create a list of anchor points from the markdown header elements 
+By default in the main project ``` config.toml ``` file a right hand side Table of Contents is disabled.  If you need this enabled project-wide you can change this value to ``` true ``` in the TOML file or override in individual Markdown file by adding the ```  ``` option to the front matter. Table of contents will create a list of anchor points from the markdown header elements 
 (``` # ## ### ### ```) and clicking them will auto scroll you to that section of the page. 
 
 e.g
@@ -175,7 +175,7 @@ bookShowToC: True
 ```
 
 
-Alternatively if you wish to have the Table of Contents always on by default across the site you can add a ``` params ``` ``` BookShowToC ``` value in the site config.toml
+Alternatively if you wish to have the Table of Contents always on by default across the site you can add a ``` params ``` ``` BookShowToC ``` value in the site ``` config.toml ```
 
 e.g. 
 ```toml
@@ -211,9 +211,19 @@ aliqua. Ut enim ad minim veniam, quis nostrud exercitation
 Full text search is supported using [lunr.js](https://lunrjs.com/).  Multi language support is limited to those supported by [lunr-languages](https://github.com/MihaiValentin/lunr-languages). If content is provided in that language a search index will not be created and the search bar will not appear in the nav bar.
 
 
+
+### PDF
+
+The PDF table of contents is automatically generated from Markdown header ``` # ``` character.  This can be overridden in the circleci build configuration to create table of contents links for all markdown headers ``` # ## ## ```. To build a table contents for all headers change ``` --toc-depth ``` in ```.circleci/config.yml```. Valide values are 1,2 or 3.
+
+```sh
+pandoc "$i" -o "$HOME/build/tmp/$pdffilename" --pdf-engine=xelatex -V geometry:margin=1in -V papersize:a4 -V mainfont:Archivo-Regular --toc --toc-depth=1
+```
+
+
 ### Multi-language Sites
 
-This template allows for building multi-language sites by simply creating directories for each language needed, following the same directory structure as a single language site. an example folder structure is as follows:
+This template allows for building multi-language sites by simply creating directories for each language needed, following the same directory structure as a single language site. An example folder structure is as follows:
 
 ```
 content/
@@ -228,7 +238,7 @@ content/
 ```
 
 
-Then in your site config.toml tell Hugo how to find these directories:
+Then in your site ``` config.toml ``` tell Hugo how to find these directories:
 
 ```toml
 [languages]

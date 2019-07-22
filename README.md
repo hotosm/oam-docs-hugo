@@ -205,6 +205,28 @@ aliqua. Ut enim ad minim veniam, quis nostrud exercitation
 ```
 
 
+### Static Assets 
+
+Static assets should be stored in the ```/static``` directory. For multi-lingual sites create subdirectorys to match the language codes used within the static directory.  These will then be mapped to the correct language in the web and PDF outputs.
+
+
+#### Images
+
+Store images in an images subdirectory of the ```/static``` directory.  Reference images in your markdown with ```/images``` preprended
+
+e.g.
+```
+static
+|__images
+   |__ icon.png
+```
+
+```md
+![icon]('/images/icon.png')
+```
+
+Within the images subdirectory you can add additional directories as needed for organization.
+
 
 ### Search
 
@@ -303,5 +325,44 @@ Web Server is available at //localhost:58696/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
 ```
 
+```
+Note: Running Hugo will only build the web portion of the site.  Text Search and PDF processing require separate processes. If a full reproducible build is required locally follow the Docker guide below.
+```
 
-### Contributing
+
+#### Full Local Build Setup
+
+A full build of the site may be necessary for debugging and additional quality control before deploying.
+
+The full local build requires [Docker](https://www.docker.com/) installed.  This will keep the dependencies contained to a docker container and provide a more streamlined and reproducible build.
+
+Clone the repo and ```cd``` into 
+
+```sh
+git clone --recurse-submodules https://github.com/hotosm/my-documentation-repo.git && cd my-documentation-repo
+```
+
+Run ```docker build``` to build the image, where ```documentation-site``` is the name of the image you want to create
+
+```sh
+docker build -t documentation-site .
+```
+
+Run ```docker run``` and map the docker port ```7000``` to a port on your machine in this example ```8000```
+```
+docker run documentation-site -it -p 8000:7000
+```
+
+Now you should be able to navigate to ```http://localhost:8000``` (or the port chosen) in your browser and use the site.  Any subsequent changes to content will require a new build of the docker image.
+
+
+#### Requirements
+
+* python >3.7
+  * pipenv installed 
+    ```sh
+    pip install pipenv
+    ```
+* node.js
+* pandoc
+* ghostscript

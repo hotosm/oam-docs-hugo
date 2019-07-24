@@ -350,7 +350,7 @@ docker build -t documentation-site .
 
 Run ```docker run``` and map the docker port ```7000``` to a port on your machine in this example ```8000```
 ```
-docker run documentation-site -it -p 8000:7000
+docker run -it -p 8000:7000 documentation-site 
 ```
 
 Now you should be able to navigate to ```http://localhost:8000``` (or the port chosen) in your browser and use the site.  Any subsequent changes to content will require a new build of the docker image.

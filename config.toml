@@ -1,15 +1,15 @@
 languageCode = "en-us"
-title = "My New HOT Documenation Site" #<-- change me
+title = "HOTOSM DevOps Documentation"
 theme = "book"
 DefaultContentLanguage = "en"
 relativeurls = true
 enableGitInfo = true
 
 [params]
-    BookRepo = "https://github.com/hotosm/" #<-- change me
+    BookRepo = "https://github.com/hotosm/devops-docs"
     BookShowToC = false
     BookEditPath = "/edit/master/content/"
-    matomoSiteID =                 #<-- Add matomo site ID 
+    matomoSiteID = 23
 
 [imaging]
     resampleFilter = "box"

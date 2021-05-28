@@ -1,13 +1,13 @@
 languageCode = "en-us"
-title = "HOTOSM DevOps Documentation"
+title = "OpenAerialMap Documentation"
 theme = "book"
 DefaultContentLanguage = "en"
 relativeurls = true
 enableGitInfo = true
 
 [params]
-    BookRepo = "https://github.com/hotosm/devops-docs"
-    BookShowToC = false
+    BookRepo = "https://github.com/hotosm/oam-docs-hugo"
+    BookShowToC = true
     BookEditPath = "/edit/master/content/"
     matomoSiteID = 23
 

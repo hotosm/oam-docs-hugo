@@ -10,68 +10,21 @@ introduction: Brand assets and guidelines.
 ---
 
 ## Logo
+	Construction grid
+   ![Screenshot](/content/design/oam-logo-constructrion-grid.svg)
 
-<figure class="exhibit">
-  <div class="exhibit__content">
-    <img src="{{ site.baseurl }}/assets/graphics/content/oam-logo-constructrion-grid.svg" width="1152" height="960" alt="OpenAerialMap logo construction grid" />
-  </div>
-  <figcaption class="exhibit__caption">
-    <strong class="exhibit__captitle">Construction grid</strong>
-  </figcaption>
-</figure>
-
-<ul class="logo-list">
-  <li>
-    <figure class="exhibit">
-      <div class="exhibit__content">
-        <span class="logotype logotype--v-pos">
-          <img src="{{ site.baseurl }}/assets/graphics/layout/oam-logo-v-pos.svg" width="576" height="464" alt="OpenAerialMap logo" />
-        </span>
-      </div>
-      <figcaption class="exhibit__caption">
-        <strong class="exhibit__captitle">Vertical positive</strong>
-      </figcaption>
-      </figcaption>
-    </figure>
-  </li>
-  <li>
-    <figure class="exhibit">
-      <div class="exhibit__content exhibit__content--dark">
-        <span class="logotype logotype--v-neg">
-          <img src="{{ site.baseurl }}/assets/graphics/layout/oam-logo-v-neg.svg" width="576" height="464" alt="OpenAerialMap logo" />
-        </span>
-      </div>
-      <figcaption class="exhibit__caption">
-        <strong class="exhibit__captitle">Vertical negative</strong>
-      </figcaption>
-    </figure>
-  </li>
-  <li>
-    <figure class="exhibit">
-      <div class="exhibit__content">
-        <span class="logotype logotype--h-pos">
-          <img src="{{ site.baseurl }}/assets/graphics/layout/oam-logo-h-pos.svg" width="832" height="160" alt="OpenAerialMap logo" />
-        </span>
-      </div>
-      <figcaption class="exhibit__caption">
-        <strong class="exhibit__captitle">Horizontal positive</strong>
-      </figcaption>
-    </figure>
-  </li>
-  <li>
-    <figure class="exhibit">
-      <div class="exhibit__content exhibit__content--dark">
-        <span class="logotype logotype--h-neg">
-          <img src="{{ site.baseurl }}/assets/graphics/layout/oam-logo-h-neg.svg" width="832" height="160" alt="OpenAerialMap logo" />
-        </span>
-      </div>
-      <figcaption class="exhibit__caption">
-        <strong class="exhibit__captitle">Horizontal negative</strong>
-      </figcaption>
-    </figure>
-  </li>
-</ul>
-
+	Vertical positive
+   ![Screenshot](/content/design/oam-logo-v-pos.svg)
+   
+   Vertical negative
+   ![Screenshot](/content/design/oam-logo-v-neg.svg)
+ 
+  Horizontal positive
+   ![Screenshot](/content/design/oam-logo-h-pos.svg)
+	
+ Horizontal positive
+   ![Screenshot](/content/design/oam-logo-h-neg.svg)
+   
 ## Typography
 
 The typeface in use is **Open Sans**, a sans-serif typeface designed by Steve Matteson and commissioned by Google. It was developed with a neutral, yet friendly appearance and is optimized for legibility across print, web, and mobile interfaces.

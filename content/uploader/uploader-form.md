@@ -1,6 +1,5 @@
 ---
 title: Uploader Form
-weight: 1
 bookShowToC: true
 ---
 
@@ -9,15 +8,15 @@ The upload form is the way for users to contribute to the OAM imagery database.
 ![Screenshot](/content/uploader/form.png)
 
 
-# Token
+## Token
 Users need a valid token to submit imagery. This helps the OAM team ensure the quality of the submitted materials.  
 The token can be requested either by email or through a github issue. When done via the "Request token" button on the [upload form](https://upload.openaerialmap.org) the email/issue will have a template prompting the user for all the needed information.
 
-# Contributing
+## Contributing
 
 In order to upload imagery to OAM, you will need to have your files stored in a publicly accessible location. This means you cannot have your files only stored on your computer, but need to stored in a location that allows downloads. Services like [Dropbox](https://www.dropbox.com) and [Google Drive](https://drive.google.com) provide easy to use file storage with methods for publicly sharing. 
 
-## via Dropbox
+### via Dropbox
 
 If you have your imagery stored in Dropbox, you can directly select the files you would like to upload from the Dropbox file integration. 
 
@@ -25,7 +24,7 @@ Select Dropbox as your Imagery Location, and Dropbox will open a dialog box to a
 
 Please be aware that Dropbox automatically turns on file sharing for each file selected temporarily.
 
-## via Google Drive
+### via Google Drive
 
 You can connect your Google Drive folder and individually select files to be uploaded. In order for OAM to download the file from Google Drive, each file must have sharing settings that allow the file to be publicly viewable. Following these steps if the file does not have sharing turned on: 
 
@@ -38,10 +37,10 @@ You can connect your Google Drive folder and individually select files to be upl
 
 Read more on the [Google Drive support forum](https://support.google.com/drive/answer/2494822?hl=en&ref_topic=7000947).
 
-## via public URL
+### via public URL
 
 If you have files stored in another location, copy and paste the full URL (including "http") into the Upload form box. These file locations need to be publicly accessible, meaning that anyone with the link can download from that location. 
 
 
-# Source code and development
+## Source code and development
 The `oam-uploader` is completely open source and the [code and instructions](https://github.com/hotosm/oam-uploader) are available on github under the **BSD 3-Clause license**.

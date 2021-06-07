@@ -1,7 +1,5 @@
 ---
 title: Brand
-
-weight: 2
 bookShowToC: true
 ---
 

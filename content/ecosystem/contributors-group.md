@@ -1,7 +1,7 @@
 ---
 title: Contributors Group
-weight: 2
 bookShowToC: true
+
 ---
 
 # Contributor Components

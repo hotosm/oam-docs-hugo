@@ -1,6 +1,5 @@
 ---
 title: Api Server
-weight: 3
 ---
 
 The API server handles everything related to imagery upload, from user tokens to the actual uploads and processing.

@@ -1,11 +1,8 @@
 ---
 title: Design System
-
 weight: 6
 bookShowToC: true
-
 ---
-# OAM Design System
 
 Style guide and UI components library that aims to standardize the look and feel across all OAM-related applications, while defining coding best practices and conventions.
 

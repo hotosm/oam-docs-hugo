@@ -1,6 +1,5 @@
 ---
 title: Content
-weight: 4
 bookShowToC: true
 published: false
 ---

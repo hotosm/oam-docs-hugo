@@ -1,6 +1,6 @@
 ---
 title: Uploader
-weight: 3
+weight: 4
 ---
 
 # OpenAerialMap Uploader

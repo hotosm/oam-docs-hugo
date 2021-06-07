@@ -1,7 +1,6 @@
 ---
 
 title: Components
-weight: 5
 bookShowToC: true
 ---
 

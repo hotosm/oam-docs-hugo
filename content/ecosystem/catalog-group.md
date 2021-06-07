@@ -1,6 +1,5 @@
 ---
 title: Catalog Group
-weight: 1
 bookShowToC: true
 ---
 

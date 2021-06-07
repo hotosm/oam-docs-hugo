@@ -1,6 +1,6 @@
 ---
 title: Constructs
-weight: 6
+
 bookShowToC: true
 ---
 

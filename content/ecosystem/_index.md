@@ -1,9 +1,11 @@
 ---
 title: Ecosystem
 weight: 1
+bookShowToC: true
+layout: pages
 ---
 
-# OpenAerialMap Ecosystem
+## OpenAerialMap Ecosystem
 
 Imagery from satellites, unmanned aerial vehicles (UAVs) and other aircraft is becoming increasingly available after a disaster. It is often difficult to determine what is available and easily access it. OpenAerialMap (OAM) seeks to solve this by providing a simple open way to host and provide access to imagery for humanitarian response and disaster preparedness.
 

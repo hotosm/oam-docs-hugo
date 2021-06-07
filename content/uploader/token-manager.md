@@ -1,6 +1,5 @@
 ---
 title: Token Manager
-weight: 2
 ---
 
 The token is a hexadecimal access code that allows the upload of imagery to the OAM database.

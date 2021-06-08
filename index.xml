@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome on OpenAerialMap Docs</title>
+    <link>/</link>
+    <description>Recent content in Welcome on OpenAerialMap Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Started</title>
+      <link>/design/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/design/getting-started/</guid>
+      <description>Style guide and UI components library that aims to standardize the look and feel across all OAM-related applications, while defining coding best practices and conventions.
+This is still under development. Breaking changes may be introduced at any moment. Use at your own risk!
+ Installation Install it as an npm module: (not available as an npm module yet)
+npm install https://github.com/hotosm/oam-design-system Note: This design system makes some assumptions which are described below for each of the elements.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started</title>
+      <link>/ecosystem/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/ecosystem/getting-started/</guid>
+      <description>OpenAerialMap Ecosystem Imagery from satellites, unmanned aerial vehicles (UAVs) and other aircraft is becoming increasingly available after a disaster. It is often difficult to determine what is available and easily access it. OpenAerialMap (OAM) seeks to solve this by providing a simple open way to host and provide access to imagery for humanitarian response and disaster preparedness.
+OpenAerialMap relies on a set of open source tools to accomplish its goals. These components can be divided into two main functionalities:</description>
+    </item>
+    
+    <item>
+      <title>Getting Started</title>
+      <link>/uploader/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/uploader/getting-started/</guid>
+      <description>OpenAerialMap Uploader The OAM imagery database is made of the contributions of users, but to ensure the quality and accuracy of the contents the uploaders need to be approved.
+Users have to request a token which then can be used in the upload form to validate their identity. Learn more about how to upload.
+The OAM uploader consists of three different tools:
+ the upload form the token manager app and the server to glue everything together  </description>
+    </item>
+    
+    <item>
+      <title>Api Server</title>
+      <link>/uploader/api-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/uploader/api-server/</guid>
+      <description>The API server handles everything related to imagery upload, from user tokens to the actual uploads and processing.
+Upload To be developed. Good things come to those who wait&amp;hellip;
+Processing To be developed. Good things come to those who wait&amp;hellip;
+Further documentation Check out the full API documentation for information on the imagery upload related endpoints.
+Source code and development The oam-uploader-api is completely open source and the code and instructions are available on github under the BSD 3-Clause license.</description>
+    </item>
+    
+    <item>
+      <title>Brand</title>
+      <link>/design/brand/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/design/brand/</guid>
+      <description>Logo Construction grid Vertical positive Vertical negative Horizontal positive Horizontal positive Typography The typeface in use is Open Sans, a sans-serif typeface designed by Steve Matteson and commissioned by Google. It was developed with a neutral, yet friendly appearance and is optimized for legibility across print, web, and mobile interfaces.
+The complete family is available under an open license on Google Fonts.
+Colors </description>
+    </item>
+    
+    <item>
+      <title>Catalog Group</title>
+      <link>/ecosystem/catalog-group/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/ecosystem/catalog-group/</guid>
+      <description>Catalog Components Components that index and serve imagery metadata. The Open Imagery Network (OIN) specification allows providers to annotate their imagery with metadata and register them to the network in a standard way. The OAM Catalog is a collection of OIN spec&amp;rsquo;d metadata.
+OAM API The OAM API in the main component of this group. It contains two sub-components that work together to provide imagery metadata to users: The worker and the catalog API.</description>
+    </item>
+    
+    <item>
+      <title>Components</title>
+      <link>/design/components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/design/components/</guid>
+      <description>Buttons Colors &amp;lt;button class=&amp;#34;button button--achromic&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Achromic&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--base&amp;#34; type=&amp;#34;submit&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Base&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;a class=&amp;#34;button button--primary&amp;#34; role=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Primary&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;button class=&amp;#34;button button--secondary&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Secondary&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--base-unbounded&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Base unbounded&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--primary-unbounded&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Primary unbounded&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--secondary-unbounded&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Secondary unbounded&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; Sizes &amp;lt;button class=&amp;#34;button button--achromic button--small&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Small&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--achromic button--medium&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Medium&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--achromic button--large&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Large&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; States &amp;lt;button class=&amp;#34;button button--achromic button--active&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Active&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--achromic disabled&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Disabled&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; Iconified &amp;lt;button class=&amp;#34;button button--achromic button--text-hidden&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;i class=&amp;#34;oam-ds-icon-clock&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;span&amp;gt;Hidden text&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--achromic&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;i class=&amp;#34;oam-ds-icon-clock&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;span&amp;gt;Visible text&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--achromic button--icon&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;span&amp;gt;Pseudo-element&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; Groups &amp;lt;div class=&amp;#34;button-group button-group--horizontal&amp;#34; role=&amp;#34;group&amp;#34; aria-label=&amp;#34;.</description>
+    </item>
+    
+    <item>
+      <title>Constructs</title>
+      <link>/design/constructs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/design/constructs/</guid>
+      <description>Flag Regular &amp;lt;article class=&amp;#34;flag-construct flag-construct--align-top&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;flag-construct__media&amp;#34;&amp;gt; &amp;lt;img alt=&amp;#34;flag-construct image&amp;#34; width=&amp;#34;320&amp;#34; height=&amp;#34;320&amp;#34; src=&amp;#34;{{ site.baseurl }}/assets/graphics/content/design/earth-img-square.jpg&amp;#34; /&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;flag-construct__body&amp;#34;&amp;gt; &amp;lt;h3&amp;gt;This is a title&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Morbi eget mattis ipsum. Donec massa nibh, bibendum at sem eu purus. Nunc in tortor eu tellus ultricies euismod.&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Duis massa mi, pharetra eu nisl non, scelerisque laoreet diam. Fusce in malesuada justo. Aenean vulputate mi a pharetra lorem ipsum tristique.&amp;lt;/p&amp;gt; &amp;lt;button class=&amp;#34;button button--achromic&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Action&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/article&amp;gt; Reverted &amp;lt;article class=&amp;#34;flag-construct flag-construct--align-top&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;flag-construct__body&amp;#34;&amp;gt; &amp;lt;h3&amp;gt;This is a title&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Morbi eget mattis ipsum.</description>
+    </item>
+    
+    <item>
+      <title>Contributors Group</title>
+      <link>/ecosystem/contributors-group/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/ecosystem/contributors-group/</guid>
+      <description>Contributor Components Components that allow a contributor to add data to the system through an upload form. The data is added to the HOTOSM imagery bucket. Contributors with a large amount of imagery should consider setting up their own imagery bucket within the OIN network.
+OAM Uploader A web form that a contributor can use to add datasets to OpenAerialMap. This form requires an access token for authorization, which can be requested from an OpenAerialMap team member.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started</title>
+      <link>/browser/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/browser/getting-started/</guid>
+      <description>OpenAerialMap Browser Imagery from satellites, unmanned aerial vehicles (UAVs) and other aircraft are becoming available at ever increasing rates. It is often difficult to determine what is available and easily access it.
+The OAM Browser aims to provide a simple way to find and access aerial imagery.
+It features an interactive grid that simplifies the process of finding imagery for a particular location, and a set of filters that allow you to refine the search even further.</description>
+    </item>
+    
+    <item>
+      <title>Iconography</title>
+      <link>/design/iconography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/design/iconography/</guid>
+      <description>The OAM Design System includes a small library of UI icons based off Collecticons to be used on web applications. This icon font can be easily customized using just CSS: size, color, drop shadow, etc.
+Usage You can place OAM icons just about anywhere using the respective CSS class. The icon library is designed to be used with inline elements (we like the &amp;lt;i&amp;gt; tag for brevity, but using a &amp;lt;span&amp;gt; is more semantically correct).</description>
+    </item>
+    
+    <item>
+      <title>OAM API</title>
+      <link>/api/api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/api/api/</guid>
+      <description>OpenAerialMap API OpenAerialMap API is an application programming interface (API) that serves metadata about available images and map layers. The API provides access to all imagery metadata information and endpoints to list images available, map layer services available, as well as simple analytics.
+Quick Start The API is split into three available endpoints:
+ a metadata endpoint /meta a tiled map service (TMS) listing endpoint /tms and an analytics endpoint /analytics  To get started, you can access the metadata endpoint here: http://api.</description>
+    </item>
+    
+    <item>
+      <title>Roll Your Own</title>
+      <link>/ecosystem/roll-your-own/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/ecosystem/roll-your-own/</guid>
+      <description>For development purposes, you can roll parts of OpenAerialMap locally. Detailed docs exist in the README section of each component. This document is an overview of the interdependencies and configuring the development environment as a functional whole.
+Development Requirements   It will be necessary to use nvm during development - some applications will need Node v4, others will use Node v0.12
+  In some components (the web frontends) configuration variables can be added to app/assets/scripts/config/local.</description>
+    </item>
+    
+    <item>
+      <title>Tiler</title>
+      <link>/tiler/tiler/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tiler/tiler/</guid>
+      <description>The Tiler is the tool and API to generate tiled map service endpoints from OAM imagery.
+See oam-server-tiler, oam-server-api, and oam-server-cli for details on the OAM Tiler components.</description>
+    </item>
+    
+    <item>
+      <title>Token Manager</title>
+      <link>/uploader/token-manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/uploader/token-manager/</guid>
+      <description>The token is a hexadecimal access code that allows the upload of imagery to the OAM database. Administrators can create and manage tokens using the admin interface.
+Since tokens are not tied to a specific user, a description allows the admin to keep track of the purpose of each one.
+Tokens can have an expiracy date, a feature that is useful if the token is being generated, for example, for a mapping event.</description>
+    </item>
+    
+    <item>
+      <title>Uploader Form</title>
+      <link>/uploader/uploader-form/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/uploader/uploader-form/</guid>
+      <description>The upload form is the way for users to contribute to the OAM imagery database.
+Token Users need a valid token to submit imagery. This helps the OAM team ensure the quality of the submitted materials.
+The token can be requested either by email or through a github issue. When done via the &amp;ldquo;Request token&amp;rdquo; button on the upload form the email/issue will have a template prompting the user for all the needed information.</description>
+    </item>
+    
+    <item>
+      <title>User Guide</title>
+      <link>/browser/user-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/browser/user-guide/</guid>
+      <description>How to use? OAM can be used with a web browser. Simply search by location to find imagery available in a given area of interest. Each area can be selected to view available imagery as well as details about each image.
+The OAM search interface focuses on two main core functions:
+ Searching by location and metadata Using available imagery  OAM can be used within any modern browser (Chrome, Firefox, IE 10+).</description>
+    </item>
+    
+  </channel>
+</rss>

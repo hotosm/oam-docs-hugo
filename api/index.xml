@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Catalog on OpenAerialMap Docs</title>
+    <link>/api/</link>
+    <description>Recent content in Catalog on OpenAerialMap Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/api/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OAM API</title>
+      <link>/api/api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/api/api/</guid>
+      <description>OpenAerialMap API OpenAerialMap API is an application programming interface (API) that serves metadata about available images and map layers. The API provides access to all imagery metadata information and endpoints to list images available, map layer services available, as well as simple analytics.
+Quick Start The API is split into three available endpoints:
+ a metadata endpoint /meta a tiled map service (TMS) listing endpoint /tms and an analytics endpoint /analytics  To get started, you can access the metadata endpoint here: http://api.</description>
+    </item>
+    
+  </channel>
+</rss>

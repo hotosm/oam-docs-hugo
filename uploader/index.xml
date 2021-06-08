@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Uploader on OpenAerialMap Docs</title>
+    <link>/uploader/</link>
+    <description>Recent content in Uploader on OpenAerialMap Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/uploader/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Started</title>
+      <link>/uploader/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/uploader/getting-started/</guid>
+      <description>OpenAerialMap Uploader The OAM imagery database is made of the contributions of users, but to ensure the quality and accuracy of the contents the uploaders need to be approved.
+Users have to request a token which then can be used in the upload form to validate their identity. Learn more about how to upload.
+The OAM uploader consists of three different tools:
+ the upload form the token manager app and the server to glue everything together  </description>
+    </item>
+    
+    <item>
+      <title>Api Server</title>
+      <link>/uploader/api-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/uploader/api-server/</guid>
+      <description>The API server handles everything related to imagery upload, from user tokens to the actual uploads and processing.
+Upload To be developed. Good things come to those who wait&amp;hellip;
+Processing To be developed. Good things come to those who wait&amp;hellip;
+Further documentation Check out the full API documentation for information on the imagery upload related endpoints.
+Source code and development The oam-uploader-api is completely open source and the code and instructions are available on github under the BSD 3-Clause license.</description>
+    </item>
+    
+    <item>
+      <title>Token Manager</title>
+      <link>/uploader/token-manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/uploader/token-manager/</guid>
+      <description>The token is a hexadecimal access code that allows the upload of imagery to the OAM database. Administrators can create and manage tokens using the admin interface.
+Since tokens are not tied to a specific user, a description allows the admin to keep track of the purpose of each one.
+Tokens can have an expiracy date, a feature that is useful if the token is being generated, for example, for a mapping event.</description>
+    </item>
+    
+    <item>
+      <title>Uploader Form</title>
+      <link>/uploader/uploader-form/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/uploader/uploader-form/</guid>
+      <description>The upload form is the way for users to contribute to the OAM imagery database.
+Token Users need a valid token to submit imagery. This helps the OAM team ensure the quality of the submitted materials.
+The token can be requested either by email or through a github issue. When done via the &amp;ldquo;Request token&amp;rdquo; button on the upload form the email/issue will have a template prompting the user for all the needed information.</description>
+    </item>
+    
+  </channel>
+</rss>

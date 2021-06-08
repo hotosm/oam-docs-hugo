@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OAM Browser on OpenAerialMap Docs</title>
+    <link>/browser/</link>
+    <description>Recent content in OAM Browser on OpenAerialMap Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/browser/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Started</title>
+      <link>/browser/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/browser/getting-started/</guid>
+      <description>OpenAerialMap Browser Imagery from satellites, unmanned aerial vehicles (UAVs) and other aircraft are becoming available at ever increasing rates. It is often difficult to determine what is available and easily access it.
+The OAM Browser aims to provide a simple way to find and access aerial imagery.
+It features an interactive grid that simplifies the process of finding imagery for a particular location, and a set of filters that allow you to refine the search even further.</description>
+    </item>
+    
+    <item>
+      <title>User Guide</title>
+      <link>/browser/user-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/browser/user-guide/</guid>
+      <description>How to use? OAM can be used with a web browser. Simply search by location to find imagery available in a given area of interest. Each area can be selected to view available imagery as well as details about each image.
+The OAM search interface focuses on two main core functions:
+ Searching by location and metadata Using available imagery  OAM can be used within any modern browser (Chrome, Firefox, IE 10+).</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design System on OpenAerialMap Docs</title>
+    <link>/design/</link>
+    <description>Recent content in Design System on OpenAerialMap Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Started</title>
+      <link>/design/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/design/getting-started/</guid>
+      <description>Style guide and UI components library that aims to standardize the look and feel across all OAM-related applications, while defining coding best practices and conventions.
+This is still under development. Breaking changes may be introduced at any moment. Use at your own risk!
+ Installation Install it as an npm module: (not available as an npm module yet)
+npm install https://github.com/hotosm/oam-design-system Note: This design system makes some assumptions which are described below for each of the elements.</description>
+    </item>
+    
+    <item>
+      <title>Brand</title>
+      <link>/design/brand/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/design/brand/</guid>
+      <description>Logo Construction grid Vertical positive Vertical negative Horizontal positive Horizontal positive Typography The typeface in use is Open Sans, a sans-serif typeface designed by Steve Matteson and commissioned by Google. It was developed with a neutral, yet friendly appearance and is optimized for legibility across print, web, and mobile interfaces.
+The complete family is available under an open license on Google Fonts.
+Colors </description>
+    </item>
+    
+    <item>
+      <title>Components</title>
+      <link>/design/components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/design/components/</guid>
+      <description>Buttons Colors &amp;lt;button class=&amp;#34;button button--achromic&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Achromic&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--base&amp;#34; type=&amp;#34;submit&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Base&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;a class=&amp;#34;button button--primary&amp;#34; role=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Primary&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;button class=&amp;#34;button button--secondary&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Secondary&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--base-unbounded&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Base unbounded&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--primary-unbounded&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Primary unbounded&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--secondary-unbounded&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Secondary unbounded&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; Sizes &amp;lt;button class=&amp;#34;button button--achromic button--small&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Small&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--achromic button--medium&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Medium&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--achromic button--large&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Large&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; States &amp;lt;button class=&amp;#34;button button--achromic button--active&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Active&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--achromic disabled&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Disabled&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; Iconified &amp;lt;button class=&amp;#34;button button--achromic button--text-hidden&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;i class=&amp;#34;oam-ds-icon-clock&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;span&amp;gt;Hidden text&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--achromic&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;i class=&amp;#34;oam-ds-icon-clock&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;span&amp;gt;Visible text&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--achromic button--icon&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;span&amp;gt;Pseudo-element&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; Groups &amp;lt;div class=&amp;#34;button-group button-group--horizontal&amp;#34; role=&amp;#34;group&amp;#34; aria-label=&amp;#34;.</description>
+    </item>
+    
+    <item>
+      <title>Constructs</title>
+      <link>/design/constructs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/design/constructs/</guid>
+      <description>Flag Regular &amp;lt;article class=&amp;#34;flag-construct flag-construct--align-top&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;flag-construct__media&amp;#34;&amp;gt; &amp;lt;img alt=&amp;#34;flag-construct image&amp;#34; width=&amp;#34;320&amp;#34; height=&amp;#34;320&amp;#34; src=&amp;#34;{{ site.baseurl }}/assets/graphics/content/design/earth-img-square.jpg&amp;#34; /&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;flag-construct__body&amp;#34;&amp;gt; &amp;lt;h3&amp;gt;This is a title&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Morbi eget mattis ipsum. Donec massa nibh, bibendum at sem eu purus. Nunc in tortor eu tellus ultricies euismod.&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Duis massa mi, pharetra eu nisl non, scelerisque laoreet diam. Fusce in malesuada justo. Aenean vulputate mi a pharetra lorem ipsum tristique.&amp;lt;/p&amp;gt; &amp;lt;button class=&amp;#34;button button--achromic&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;&amp;lt;span&amp;gt;Action&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/article&amp;gt; Reverted &amp;lt;article class=&amp;#34;flag-construct flag-construct--align-top&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;flag-construct__body&amp;#34;&amp;gt; &amp;lt;h3&amp;gt;This is a title&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Morbi eget mattis ipsum.</description>
+    </item>
+    
+    <item>
+      <title>Iconography</title>
+      <link>/design/iconography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/design/iconography/</guid>
+      <description>The OAM Design System includes a small library of UI icons based off Collecticons to be used on web applications. This icon font can be easily customized using just CSS: size, color, drop shadow, etc.
+Usage You can place OAM icons just about anywhere using the respective CSS class. The icon library is designed to be used with inline elements (we like the &amp;lt;i&amp;gt; tag for brevity, but using a &amp;lt;span&amp;gt; is more semantically correct).</description>
+    </item>
+    
+  </channel>
+</rss>

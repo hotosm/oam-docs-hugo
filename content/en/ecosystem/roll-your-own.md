@@ -1,7 +1,7 @@
 ---
 title: Roll Your Own
 bookShowToC: true
-
+type: pages
 ---
 
 For development purposes, you can roll parts of OpenAerialMap locally. Detailed docs exist in the README section of each component. This document is an overview of the interdependencies and configuring the development environment as a functional whole.

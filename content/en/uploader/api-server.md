@@ -1,5 +1,6 @@
 ---
 title: Api Server
+type: pages
 ---
 
 The API server handles everything related to imagery upload, from user tokens to the actual uploads and processing.

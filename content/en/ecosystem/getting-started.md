@@ -1,7 +1,6 @@
 ---
-title: Ecosystem
+title: Getting Started
 weight: 1
-bookShowToC: true
 type: pages
 ---
 

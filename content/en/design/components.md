@@ -2,11 +2,12 @@
 
 title: Components
 bookShowToC: true
+type: pages
 ---
 
-# Buttons
+## Buttons
 
-## Colors
+### Colors
 
 ![](/content/design/colors.png)
 
@@ -21,7 +22,7 @@ bookShowToC: true
 ```
 
 
-## Sizes
+### Sizes
 
 ![](/content/design/sizes.png)
 
@@ -31,7 +32,7 @@ bookShowToC: true
 <button class="button button--achromic button--large" type="button"><span>Large</span></button>
 ```
 
-## States
+### States
 
 ![](/content/design/states.png)
 
@@ -40,7 +41,7 @@ bookShowToC: true
 <button class="button button--achromic disabled" type="button"><span>Disabled</span></button>
 ```
 
-## Iconified
+### Iconified
 
 ![](/content/design/iconified.png)
 
@@ -52,7 +53,7 @@ bookShowToC: true
 ```
 
 
-## Groups
+### Groups
 
 ![](/content/design/groups.png)
 
@@ -83,9 +84,9 @@ bookShowToC: true
 
 ```
 
-# Forms
+## Forms
 
-## Examples
+### Examples
 
 ![](/content/design/forms-example.png)
 
@@ -150,7 +151,7 @@ bookShowToC: true
 
 ```
 
-## Control sizes
+### Control sizes
 
 ![](/content/design/form-control-sizes.png)
 
@@ -176,7 +177,7 @@ bookShowToC: true
 
 ```
 
-## Custom options (radios and checkboxes)
+### Custom options (radios and checkboxes)
 
 ![](/content/design/form-custom.png)
 
@@ -217,7 +218,7 @@ bookShowToC: true
 
 ```
 
-## Input groups
+### Input groups
 
 ![](/content/design/form-input-groups.png)
 
@@ -241,9 +242,9 @@ bookShowToC: true
 </form>
 ```
 
-# Drops
+## Drops
 
-## Examples
+### Examples
 
 ![](/content/design/dropdown-example.png)
 
@@ -297,7 +298,7 @@ bookShowToC: true
 </div>
 ```
 
-## Iconified and selectable menus
+### Iconified and selectable menus
 
 ![](/content/design/iconified-dropdown.png)
 
@@ -329,7 +330,7 @@ bookShowToC: true
 </div>
 ```
 
-## React examples
+### React examples
 
 The `oam-design-system` also provides some [React](https://facebook.github.io/react/) ready-made components that can be used for the interactive pieces.
 
@@ -362,7 +363,7 @@ import { Dropdown } from 'oam-design-system';
 </Dropdown>
 ```
 
-# Panels
+## Panels
 
 ![](/content/design/panels.png)
 
@@ -383,7 +384,7 @@ import { Dropdown } from 'oam-design-system';
 </section>
 ```
 
-## Custom scrollbars
+### Custom scrollbars
 
 Whenever the content is too big for its container we use a custom scrollbar. This allows for better integration with the OAM style.  
 The scroll behavior is provided by [reactScrollbar](https://github.com/souhe/reactScrollbar), but since it's not part of the `oam-design-system` it needs to be manually installed:
@@ -430,9 +431,9 @@ import ScrollArea from 'react-scrollbar/dist/no-css';
 </section>
 ```
 
-# Alerts
+## Alerts
 
-## Block
+### Block
 
 ![](/content/design/alert-block.png)
 
@@ -458,7 +459,7 @@ import ScrollArea from 'react-scrollbar/dist/no-css';
 </div>
 ```
 
-## Popover
+### Popover
 
 ![](/content/design/popover.png)
 ```html
@@ -468,9 +469,9 @@ import ScrollArea from 'react-scrollbar/dist/no-css';
 </div>
 ```
 
-# Modal
+## Modal
 
-## Static example
+### Static example
 
 ![](/content/design/modal.png)
 
@@ -495,7 +496,7 @@ import ScrollArea from 'react-scrollbar/dist/no-css';
 </section>
 ```
 
-## React example
+### React example
 
 A modal must always have a `ModalHeader` and a `ModalBody`. The `ModalFooter` is entirely optional.  
 

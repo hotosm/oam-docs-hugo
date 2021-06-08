@@ -1,6 +1,7 @@
 ---
 
 title: Iconography
+type: pages
 ---
 
 The OAM Design System includes a small library of UI icons based off [Collecticons](http://collecticons.io/) to be used on web applications. This icon font can be easily customized using just CSS: size, color, drop shadow, etc.

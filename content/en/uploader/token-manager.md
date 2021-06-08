@@ -1,5 +1,6 @@
 ---
 title: Token Manager
+type: pages
 ---
 
 The token is a hexadecimal access code that allows the upload of imagery to the OAM database.

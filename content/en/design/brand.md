@@ -1,6 +1,7 @@
 ---
 title: Brand
 bookShowToC: true
+type: pages
 ---
 
 

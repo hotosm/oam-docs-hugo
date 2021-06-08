@@ -1,6 +1,6 @@
 ---
-title: Design System
-weight: 6
+title: Getting Started
+weight: 1
 bookShowToC: true
 type: pages
 ---

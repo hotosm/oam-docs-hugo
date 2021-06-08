@@ -1,6 +1,6 @@
 ---
 title: Constructs
-
+type: pages
 bookShowToC: true
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Uploader Form
 bookShowToC: true
+type: pages
 ---
 
 The upload form is the way for users to contribute to the OAM imagery database.

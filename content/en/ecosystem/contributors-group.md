@@ -1,7 +1,7 @@
 ---
 title: Contributors Group
 bookShowToC: true
-
+type: pages
 ---
 
 # Contributor Components

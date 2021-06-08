@@ -1,6 +1,7 @@
 ---
 title: Catalog Group
 bookShowToC: true
+type: pages
 ---
 
 # Catalog Components

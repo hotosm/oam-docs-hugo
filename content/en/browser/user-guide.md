@@ -1,6 +1,7 @@
 ---
 title: User Guide
 bookShowToC: true
+type: pages
 ---
 
 # How to use? 

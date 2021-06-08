@@ -123,11 +123,11 @@ jobs:
           name: Install and configure dependencies
           command: |
             npm install -g --silent gh-pages@2.0.1
-            git config user.email "ciricleci_build@hotosm.org"
+            git config user.email "circleci@hotosm.org"
             git config user.name "ci-build"
       - add_ssh_keys:
           fingerprints:
-            - "48:34:f6:3a:f5:63:c4:b5:2b:89:76:26:ba:d3:79:85"
+            - "d7:22:0d:5a:fe:41:c8:63:da:a9:4d:47:de:25:50:79"
       - run: 
           name: list files pushed
           command: ls public

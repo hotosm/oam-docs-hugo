@@ -4,6 +4,7 @@ theme = "hotdocs"
 DefaultContentLanguage = "en"
 relativeurls = true
 enableGitInfo = true
+# disableLanguages = ["fr"]
 
 [params]
     DefaultContentLanguage = "en"
@@ -15,12 +16,12 @@ enableGitInfo = true
     resampleFilter = "box"
     quality = 75
 
-[languages]
+# [languages]
 #   [languages.fr]
 #    contentDir = "content/fr"
 #    languageName = "Français"
 #    weight = 10
-  [languages.en]
-    contentDir = "content/en"
-    languageName = "English"
-    weight = 20
+#  [languages.en]
+#    contentDir = "content/en"
+#    languageName = "English"
+#    weight = 20

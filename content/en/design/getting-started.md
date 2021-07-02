@@ -3,6 +3,7 @@ title: Getting Started
 weight: 1
 bookShowToC: true
 type: pages
+published: false
 ---
 
 Style guide and UI components library that aims to standardize the look and feel across all OAM-related applications, while defining coding best practices and conventions.

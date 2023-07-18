@@ -171,8 +171,8 @@
   
   <div>
     
-    <a href="https://github.com/hotosm/oam-docs-hugo/commit/5f3b81d87a0f9ec7320e4725fe49dd840cc7ff1b" class="sub-title sub-title-14" title='Last modified July 2, 2021 by Dakota Benjamin' target="_blank" rel="noopener">
-      Last modified: July 2, 2021
+    <a href="https://github.com/hotosm/oam-docs-hugo/commit/a34234025da033acbf49b11f5432f2ad9d7a302a" class="sub-title sub-title-14" title='Last modified March 29, 2023 by dqunbp' target="_blank" rel="noopener">
+      Last modified: March 29, 2023
     </a>
   </div>
   
@@ -185,7 +185,17 @@
 It features an interactive grid that simplifies the process of finding imagery for a particular location, and a set of filters that allow you to refine the search even further.</p>
 <p><img src="../../content/browser/grid.png" alt=""></p>
 <p>The images can be freely downloaded and used, and some also have a map layer available which can be used with different programs.</p>
-<h2 id="source-code-and-development">Source code and development</h2>
+<h1 id="using-the-mosaic-layer">Using the Mosaic Layer</h1>
+<p>By default, the OAM browser will display a mosaic layer of all available imagery. The mosaic layer is a composite of all available imagery in the catalog. The mosaic layer is a great way to get a quick overview of the imagery available in a given area.</p>
+<h2 id="updating-the-mosaic-layer">Updating the mosaic layer</h2>
+<p>The mosaic layer will only render imagery that has been processed and is available in the catalog. When some new imagery is added or deleted from the catalog, it may take a few minutes for the mosaic layer to update.</p>
+<h2 id="visibility-conditions">Visibility conditions</h2>
+<p>The mosaic layer will be <strong>hidden</strong> under the following conditions:</p>
+<ul>
+<li>Filters are applied</li>
+<li>Imagery are selected</li>
+</ul>
+<h1 id="source-code-and-development">Source code and development</h1>
 <p>The <code>oam-browser</code> is completely open source and the <a href="https://github.com/hotosm/oam-browser">code and instructions</a> are available on github under the <strong>BSD 3-Clause license</strong>.</p>
 </div>
 
@@ -228,7 +238,8 @@ It features an interactive grid that simplifies the process of finding imagery f
         <h4 class="sub-title sub-title-10">ON THIS PAGE</h4>
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#source-code-and-development">Source code and development</a></li>
+    <li><a href="#updating-the-mosaic-layer">Updating the mosaic layer</a></li>
+    <li><a href="#visibility-conditions">Visibility conditions</a></li>
   </ul>
 </nav>
     </div>

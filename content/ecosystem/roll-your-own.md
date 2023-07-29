@@ -9,7 +9,7 @@ For development purposes, you can roll parts of OpenAerialMap locally. Detailed 
 # Development Requirements
 - It will be necessary to use [nvm](https://github.com/creationix/nvm) during development - some applications will need Node v4, others will use Node v0.12
 
-- In some components (the web frontends) configuration variables can be added to `app/assets/scripts/config/local.js`, and will override any other references to the config object throughout the project. For example, The Token Manager and Imagery Uploader must be configured to search for the Uploader API at the correct path, which is port 4000 by default. You would have use the point to a local API URL by adding the following to the configuration files in each of the apps:
+- In some components (the web frontends) configuration variables can be added to `app/assets/scripts/config/local.js`, and will override any other references to the config object throughout the project. You would have use the point to a local API URL by adding the following to the configuration files in each of the apps:
 
 ```
 module.exports = {
@@ -31,11 +31,9 @@ At a high-level, the OAM uploader software ecosystem consists of three GitHub re
 
 ### The Uploader API 
 
-The API provides the endpoints used by the upload submission form, including routes for authenticating the session via a database of approved tokens, adding image URLs and metadata to the processing queue database, checking the status of a user's uploads, and checking the status of specific uploads.
+The API provides the endpoints used by the upload submission form, adding image URLs and metadata to the processing queue database, checking the status of a user's uploads, and checking the status of specific uploads.
 
-It also provides the API endpoints used for managing users through the administrative form, including adding, removing and editing tokens.
-
-Finally, it manages a queue of images by checking for new submissions to the database at regular intervals, downloading them, processing them to a standardized TIFF specification, generating metadata and thumbnails, and uploading them to an Amazon S3 bucket. The token manager and imagery uploader require a connection to the API to function.
+Finally, it manages a queue of images by checking for new submissions to the database at regular intervals, downloading them, processing them to a standardized TIFF specification, generating metadata and thumbnails, and uploading them to an Amazon S3 bucket. 
 
 - When launching the API, several environment variables must be set. We suggest that you duplicate `local.sample.env` to `local.env` and fill in the data. Contact a maintainer for the full AWS credentials and database paths.
 
@@ -43,21 +41,13 @@ Finally, it manages a queue of images by checking for new submissions to the dat
 
 - To run, load the variables with `source local.env` and start the app with `npm start`.
 
-### The Token Manager 
-
-*This web application depends on the Uploader API*
-
-The administrative panel uses the API calls to add, remove, and edit authenticated tokens, which substitute for users in the upload system.
-
-The uploader admin provides a user interface to manage these tokens. During development is a good idea to have this running to facilitate access to the tokens. The tokens can also be viewed directly in the uploader-api database.
-
 ### The Imagery Uploader 
 
 *This web application depends on the Uploader API*
 
 This repo contains the front-end form which allows authenticated users to publish images to the processing queue, and to check the processing status of submitted tasks.
 
-It depends on a connection to the API in order to submit datasets and associated metadata to the processing queue, check upload status, and authenticate tokens. As described above, this page depends on the API for most of its functionality, and depends on the admin panel to generate tokens for authentication, so both components must be active during development.
+It depends on a connection to the API in order to submit datasets and associated metadata to the processing queue and check upload status. As described above, this page depends on the API for most of its functionality.
 
 ## The OAM catalog ecosystem
 

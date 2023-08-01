@@ -11,10 +11,10 @@ type: pages
 Components that index and serve imagery metadata. [The Open Imagery Network (OIN) specification](https://github.com/openimagerynetwork/oin-metadata-spec) allows providers to annotate their imagery with metadata and register them to the network in a standard way. The OAM Catalog is a collection of OIN spec'd metadata.
 
 ## OAM API
-The OAM API in the main component of this group. It contains two sub-components that work together to provide imagery metadata to users: The  worker and the catalog API. 
+The OAM API is the main component of this group. It contains two sub-components that work together to provide imagery metadata to users: The  worker and the catalog API. 
 
 - [Link to Github](https://github.com/hotosm/oam-api) 
-- [Link to Documentation](/api/) 
+- [Link to Documentation](/api/api/) 
 
 ### Worker subcomponent
 Written in NodeJS, runs periodically.

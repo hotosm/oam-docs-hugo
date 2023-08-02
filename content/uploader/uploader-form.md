@@ -5,7 +5,9 @@ type: pages
 ---
 
 The upload form is the way for users to contribute to the OAM imagery database.
-Besides uploading the imagery itself, contributor need to provide metadata for imagery datasets. There are two types of fields for filling in the metadata: fields for input values (Title, Sensor, Provider, Tags, Contact info) and fields with choice (Platform, Date start, Date end, Contact, License).
+Besides uploading the imagery itself, contributors need to provide metadata for imagery datasets.
+There are two types of fields for filling in the metadata: fields for input values (Title, Sensor, Provider, Tags, Contact info) and fields with choices (Platform, Date start, Date end, Contact, License).
+
 
 ![Screenshot](/content/uploader/form.png)
 
@@ -17,7 +19,8 @@ Also, there is an opportunity to upload several imagery datasets by clicking on 
 
 ## Contributing
 
-In order to upload imagery to OAM, you will need to have your files stored in a publicly accessible location. This means you cannot have your files only stored on your computer, but need to stored in a location that allows downloads. Services like [Dropbox](https://www.dropbox.com) and [Google Drive](https://drive.google.com) provide easy to use file storage with methods for publicly sharing. 
+In order to upload imagery to OAM, you have two options for storing your files. One option is to have your files stored in a publicly accessible location, which means they cannot be stored only on your computer but need to be stored in a location that allows downloads. Services like [Dropbox](https://www.dropbox.com) and [Google Drive](https://drive.google.com) provide easy-to-use file storage with methods for public sharing.
+Alternatively, you can also upload files directly from your local device. This means you can select and upload files that are stored on your computer without the need for them to be in a publicly accessible location.
 
 ### via Dropbox
 
@@ -29,7 +32,7 @@ Please be aware that Dropbox automatically turns on file sharing for each file s
 
 ### via Google Drive
 
-You can connect your Google Drive folder and individually select files to be uploaded. In order for OAM to download the file from Google Drive, each file must have sharing settings that allow the file to be publicly viewable. Following these steps if the file does not have sharing turned on: 
+You can connect your Google Drive folder and individually select files to be uploaded. In order for OAM to download the file from Google Drive, each file must have sharing settings that allow the file to be publicly viewable. Follow these steps if the file does not have sharing turned on: 
 
 1. Navigate to your Google Drive folder
 2. Right click on the file(s) you want to share and select "Share"
@@ -42,7 +45,11 @@ Read more on the [Google Drive support forum](https://support.google.com/drive/a
 
 ### via public URL
 
-If you have files stored in another location, copy and paste the full URL (including "http") into the Upload form box. These file locations need to be publicly accessible, meaning that anyone with the link can download from that location. 
+If you have files stored in another location, copy and paste the full URL (including "http") into the Upload form box. These file locations need to be publicly accessible, meaning that anyone with the link can download from that location.
+
+### via Local Device
+
+Users can also upload imagery from their local devices. The system suggests files in `TIFF` and `TIF` formats by default. To initiate the upload, select the desired files from your device and then submit the form. Once submitted, the uploading process will begin.
 
 
 ## Source code and development

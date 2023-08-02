@@ -27,7 +27,7 @@ Written in NodeJS, runs periodically.
 The API provides an interface to query the catalog for metadata over time and by area. It also provides simple statistics that power the OAM homepage. This component is written in NodeJS
 
 ## OAM Browser
-A web application that allows a visitor to the website to search for the imagery by browsing a world map and toggling parameters. In the background, it queries the catalog API and displays the results on the map.
+A web application that allows a visitor of the website to search for the imagery by browsing a world map and toggling parameters. In the background, it queries the catalog API and displays the results on the map.
 
 - [Link to Github](https://github.com/hotosm/oam-browser)
 - [Link to Documentation](/browser/getting-started/)

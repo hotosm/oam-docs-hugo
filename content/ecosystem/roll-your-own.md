@@ -17,7 +17,7 @@ module.exports = {
 };
 ```
 
-- Server applications such as the Catalog API and Uploader API need to have environment variables set before starting them. Please refer to the list of environment variables are listed in the README docs in the code repositories.
+- Server applications such as the Catalog API and Uploader API need to have environment variables set before starting them. Please refer to the list of environment variables listed in the README docs in the code repositories.
 
 - Certain components require the installation of third party libraries and applications (such as MongoDB). Refer to the list of dependencies in the READMEs.
 

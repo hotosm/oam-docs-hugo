@@ -17,10 +17,10 @@ OAM can be used within any modern browser (Chrome, Firefox, IE 10+). Older versi
 
 # Searching by location
 
-When first visiting the application, initial search can be accomplished by typing the location of an area into the search box or selecting the Browse Latest Imagery button. Browse Latest Imagery will take you to the most recently collected imagery available in the catalog. 
+When first visiting the application, initial search can be accomplished by typing the location of an area into the search box.
 
 
-  ![](/content/browser/landing.png)
+  ![](/content/browser/search-bar.png)
 
 
 # Filtering searches
@@ -34,13 +34,13 @@ Use the filter button in the upper left of the application to filter available i
 
 When an image has been found and has an available map layer, you can use the dropdown menu to open the map layer up in an OpenStreetMap editor like iD or JOSM.
 
-![](/content/browser/sidebar-open.png)
+![](/content/browser/josm.png)
 
 
 # Downloading imagery
 
-Use the Download button to download the raw imagery. File size is list in the additional metadata information below the image preview in the sidebar. 
+Use the Download button to download the raw imagery. File size is listed in the additional metadata information below the image preview in the sidebar.
 
 
-![](/content/browser/sidebar.png)
+![](/content/browser/download.png)
 

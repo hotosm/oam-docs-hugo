@@ -126,8 +126,6 @@
                     
                         <li class="page"><a href="../../uploader/api-server/" class="menu-link">Api Server</a></li>
                     
-                        <li class="page"><a href="../../uploader/token-manager/" class="menu-link">Token Manager</a></li>
-                    
                         <li class="page"><a href="../../uploader/uploader-form/" class="menu-link">Uploader Form</a></li>
                     
                 </ul>
@@ -171,8 +169,8 @@
   
   <div>
     
-    <a href="https://github.com/hotosm/oam-docs-hugo/commit/5f3b81d87a0f9ec7320e4725fe49dd840cc7ff1b" class="sub-title sub-title-14" title='Last modified July 2, 2021 by Dakota Benjamin' target="_blank" rel="noopener">
-      Last modified: July 2, 2021
+    <a href="https://github.com/hotosm/oam-docs-hugo/commit/e53b8cc6c3120f09ebfa657ec39c68a92e842707" class="sub-title sub-title-14" title='Last modified August 2, 2023 by dqunbp' target="_blank" rel="noopener">
+      Last modified: August 2, 2023
     </a>
   </div>
   
@@ -186,7 +184,7 @@
 <p>It will be necessary to use <a href="https://github.com/creationix/nvm">nvm</a> during development - some applications will need Node v4, others will use Node v0.12</p>
 </li>
 <li>
-<p>In some components (the web frontends) configuration variables can be added to <code>app/assets/scripts/config/local.js</code>, and will override any other references to the config object throughout the project. For example, The Token Manager and Imagery Uploader must be configured to search for the Uploader API at the correct path, which is port 4000 by default. You would have use the point to a local API URL by adding the following to the configuration files in each of the apps:</p>
+<p>In some components (the web frontends) configuration variables can be added to <code>app/assets/scripts/config/local.js</code>, and will override any other references to the config object throughout the project. You would have use the point to a local API URL by adding the following to the configuration files in each of the apps:</p>
 </li>
 </ul>
 <pre tabindex="0"><code>module.exports = {
@@ -194,7 +192,7 @@
 };
 </code></pre><ul>
 <li>
-<p>Server applications such as the Catalog API and Uploader API need to have environment variables set before starting them. Please refer to the list of environment variables are listed in the README docs in the code repositories.</p>
+<p>Server applications such as the Catalog API and Uploader API need to have environment variables set before starting them. Please refer to the list of environment variables listed in the README docs in the code repositories.</p>
 </li>
 <li>
 <p>Certain components require the installation of third party libraries and applications (such as MongoDB). Refer to the list of dependencies in the READMEs.</p>
@@ -207,9 +205,8 @@
 <h2 id="the-oam-uploader-ecosystem">The OAM uploader ecosystem</h2>
 <p>At a high-level, the OAM uploader software ecosystem consists of three GitHub repositories housing the <a href="https://github.com/hotosm/oam-uploader-api">API</a>, the <a href="https://github.com/hotosm/oam-uploader-admin">administrative panel</a>, and the front-end <a href="https://github.com/hotosm/oam-uploader">uploader form</a>.</p>
 <h3 id="the-uploader-api">The Uploader API</h3>
-<p>The API provides the endpoints used by the upload submission form, including routes for authenticating the session via a database of approved tokens, adding image URLs and metadata to the processing queue database, checking the status of a user&rsquo;s uploads, and checking the status of specific uploads.</p>
-<p>It also provides the API endpoints used for managing users through the administrative form, including adding, removing and editing tokens.</p>
-<p>Finally, it manages a queue of images by checking for new submissions to the database at regular intervals, downloading them, processing them to a standardized TIFF specification, generating metadata and thumbnails, and uploading them to an Amazon S3 bucket. The token manager and imagery uploader require a connection to the API to function.</p>
+<p>The API provides the endpoints used by the upload submission form, adding image URLs and metadata to the processing queue database, checking the status of a user&rsquo;s uploads, and checking the status of specific uploads.</p>
+<p>Finally, it manages a queue of images by checking for new submissions to the database at regular intervals, downloading them, processing them to a standardized TIFF specification, generating metadata and thumbnails, and uploading them to an Amazon S3 bucket.</p>
 <ul>
 <li>
 <p>When launching the API, several environment variables must be set. We suggest that you duplicate <code>local.sample.env</code> to <code>local.env</code> and fill in the data. Contact a maintainer for the full AWS credentials and database paths.</p>
@@ -221,14 +218,10 @@
 <p>To run, load the variables with <code>source local.env</code> and start the app with <code>npm start</code>.</p>
 </li>
 </ul>
-<h3 id="the-token-manager">The Token Manager</h3>
-<p><em>This web application depends on the Uploader API</em></p>
-<p>The administrative panel uses the API calls to add, remove, and edit authenticated tokens, which substitute for users in the upload system.</p>
-<p>The uploader admin provides a user interface to manage these tokens. During development is a good idea to have this running to facilitate access to the tokens. The tokens can also be viewed directly in the uploader-api database.</p>
 <h3 id="the-imagery-uploader">The Imagery Uploader</h3>
 <p><em>This web application depends on the Uploader API</em></p>
 <p>This repo contains the front-end form which allows authenticated users to publish images to the processing queue, and to check the processing status of submitted tasks.</p>
-<p>It depends on a connection to the API in order to submit datasets and associated metadata to the processing queue, check upload status, and authenticate tokens. As described above, this page depends on the API for most of its functionality, and depends on the admin panel to generate tokens for authentication, so both components must be active during development.</p>
+<p>It depends on a connection to the API in order to submit datasets and associated metadata to the processing queue and check upload status. As described above, this page depends on the API for most of its functionality.</p>
 <h2 id="the-oam-catalog-ecosystem">The OAM catalog ecosystem</h2>
 <p>The OAM catalog software ecosystem consists of three GitHub repositories housing the <a href="https://github.com/hotosm/oam-api">API</a>, the <a href="https://github.com/hotosm/oam-browser">Imagery Browser</a>, and the <a href="https://github.com/hotosm/openaerialmap.org">OAM Landing Page</a>.</p>
 <h3 id="the-catalog-api">The Catalog API</h3>
@@ -279,7 +272,6 @@
     <li><a href="#the-oam-uploader-ecosystem">The OAM uploader ecosystem</a>
       <ul>
         <li><a href="#the-uploader-api">The Uploader API</a></li>
-        <li><a href="#the-token-manager">The Token Manager</a></li>
         <li><a href="#the-imagery-uploader">The Imagery Uploader</a></li>
       </ul>
     </li>

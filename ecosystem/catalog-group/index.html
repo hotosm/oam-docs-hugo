@@ -126,8 +126,6 @@
                     
                         <li class="page"><a href="../../uploader/api-server/" class="menu-link">Api Server</a></li>
                     
-                        <li class="page"><a href="../../uploader/token-manager/" class="menu-link">Token Manager</a></li>
-                    
                         <li class="page"><a href="../../uploader/uploader-form/" class="menu-link">Uploader Form</a></li>
                     
                 </ul>
@@ -171,8 +169,8 @@
   
   <div>
     
-    <a href="https://github.com/hotosm/oam-docs-hugo/commit/5f3b81d87a0f9ec7320e4725fe49dd840cc7ff1b" class="sub-title sub-title-14" title='Last modified July 2, 2021 by Dakota Benjamin' target="_blank" rel="noopener">
-      Last modified: July 2, 2021
+    <a href="https://github.com/hotosm/oam-docs-hugo/commit/e53b8cc6c3120f09ebfa657ec39c68a92e842707" class="sub-title sub-title-14" title='Last modified August 2, 2023 by dqunbp' target="_blank" rel="noopener">
+      Last modified: August 2, 2023
     </a>
   </div>
   
@@ -183,10 +181,10 @@
 <p><img src="../../content/ecosystem/ecosystem_oam_catalog.png" alt="Screenshot"></p>
 <p>Components that index and serve imagery metadata. <a href="https://github.com/openimagerynetwork/oin-metadata-spec">The Open Imagery Network (OIN) specification</a> allows providers to annotate their imagery with metadata and register them to the network in a standard way. The OAM Catalog is a collection of OIN spec&rsquo;d metadata.</p>
 <h2 id="oam-api">OAM API</h2>
-<p>The OAM API in the main component of this group. It contains two sub-components that work together to provide imagery metadata to users: The  worker and the catalog API.</p>
+<p>The OAM API is the main component of this group. It contains two sub-components that work together to provide imagery metadata to users: The  worker and the catalog API.</p>
 <ul>
 <li><a href="https://github.com/hotosm/oam-api">Link to Github</a></li>
-<li><a href="../../api/">Link to Documentation</a></li>
+<li><a href="../../api/api/">Link to Documentation</a></li>
 </ul>
 <h3 id="worker-subcomponent">Worker subcomponent</h3>
 <p>Written in NodeJS, runs periodically.</p>
@@ -198,7 +196,7 @@
 <h3 id="api-subcomponent">API subcomponent</h3>
 <p>The API provides an interface to query the catalog for metadata over time and by area. It also provides simple statistics that power the OAM homepage. This component is written in NodeJS</p>
 <h2 id="oam-browser">OAM Browser</h2>
-<p>A web application that allows a visitor to the website to search for the imagery by browsing a world map and toggling parameters. In the background, it queries the catalog API and displays the results on the map.</p>
+<p>A web application that allows a visitor of the website to search for the imagery by browsing a world map and toggling parameters. In the background, it queries the catalog API and displays the results on the map.</p>
 <ul>
 <li><a href="https://github.com/hotosm/oam-browser">Link to Github</a></li>
 <li><a href="../../browser/getting-started/">Link to Documentation</a></li>

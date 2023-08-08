@@ -126,8 +126,6 @@
                     
                         <li class="page"><a href="../../uploader/api-server/" class="menu-link">Api Server</a></li>
                     
-                        <li class="page"><a href="../../uploader/token-manager/" class="menu-link">Token Manager</a></li>
-                    
                         <li class="page"><a href="../../uploader/uploader-form/" class="menu-link">Uploader Form</a></li>
                     
                 </ul>
@@ -171,8 +169,8 @@
   
   <div>
     
-    <a href="https://github.com/hotosm/oam-docs-hugo/commit/5f3b81d87a0f9ec7320e4725fe49dd840cc7ff1b" class="sub-title sub-title-14" title='Last modified July 2, 2021 by Dakota Benjamin' target="_blank" rel="noopener">
-      Last modified: July 2, 2021
+    <a href="https://github.com/hotosm/oam-docs-hugo/commit/6a0a147d6f136c47910379bd0c7fae6e5c84ac69" class="sub-title sub-title-14" title='Last modified July 29, 2023 by dqunbp' target="_blank" rel="noopener">
+      Last modified: July 29, 2023
     </a>
   </div>
   
@@ -183,28 +181,16 @@
 <p><img src="../../content/ecosystem/ecosystem_oam_uploader.png" alt="Screenshot"></p>
 <p>Components that allow a contributor to add data to the system through an upload form. The data is added to the HOTOSM imagery bucket. Contributors with a large amount of imagery should consider <a href="https://github.com/openimagerynetwork/oin-register">setting up their own imagery bucket</a> within the OIN network.</p>
 <h2 id="oam-uploader">OAM Uploader</h2>
-<p>A web form that a contributor can use to add datasets to OpenAerialMap. This form requires an access token for authorization, which can be requested from an OpenAerialMap team member. It also includes a status page to view the status of a specific upload process.</p>
+<p>A web form that a contributor can use to add datasets to OpenAerialMap.</p>
 <ul>
 <li><a href="https://github.com/hotosm/oam-uploader">Link to Github</a></li>
 <li><a href="../../uploader/uploader-form/">Link to Documentation</a></li>
 </ul>
-<h2 id="oam-uploader-admin">OAM Uploader Admin</h2>
-<p>A web application that the OpenAerialMap staff uses to manage API tokens.</p>
-<ul>
-<li><a href="https://github.com/hotosm/oam-uploader-admin">Link to Github</a></li>
-<li><a href="../../uploader/token-manager">Link to Documentation</a></li>
-</ul>
 <h2 id="oam-uploader-api">OAM Uploader API</h2>
-<p>The OAM Uploader API is built using two sub-components. The worker processes uploaded imagery and pushes to an imagery bucket. The API receives form data and manages authorization tokens.</p>
+<p>The OAM Uploader API is built using two sub-components. The worker processes uploaded imagery and pushes to an imagery bucket.</p>
 <ul>
 <li><a href="https://github.com/hotosm/oam-uploader-api">Link to Github</a></li>
 <li><a href="../../uploader/api-server">Link to Documentation</a></li>
-</ul>
-<h3 id="api-subcomponent">API subcomponent</h3>
-<p>Written in NodeJS</p>
-<ul>
-<li>Manages access tokens and authentication</li>
-<li>Receives imagery data (via remote url or file upload). This data is then stored in a database (MongoDB) as jobs to be later processed by the worker.</li>
 </ul>
 <h3 id="worker-subcomponent">Worker subcomponent</h3>
 <p>Written in NodeJS</p>
@@ -254,10 +240,8 @@
         <nav id="TableOfContents">
   <ul>
     <li><a href="#oam-uploader">OAM Uploader</a></li>
-    <li><a href="#oam-uploader-admin">OAM Uploader Admin</a></li>
     <li><a href="#oam-uploader-api">OAM Uploader API</a>
       <ul>
-        <li><a href="#api-subcomponent">API subcomponent</a></li>
         <li><a href="#worker-subcomponent">Worker subcomponent</a></li>
       </ul>
     </li>

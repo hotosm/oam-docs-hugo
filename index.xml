@@ -22,10 +22,10 @@ OpenAerialMap relies on a set of open source tools to accomplish its goals. Thes
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/uploader/getting-started/</guid>
-      <description>OpenAerialMap Uploader The OAM imagery database is made of the contributions of users, but to ensure the quality and accuracy of the contents the uploaders need to be approved.
-Users have to request a token which then can be used in the upload form to validate their identity. Learn more about how to upload.
-The OAM uploader consists of three different tools:
- the upload form the token manager app and the server to glue everything together  </description>
+      <description>OpenAerialMap Uploader The OAM imagery database is made up of the contributions of users.
+Learn more about how to upload.
+The OAM uploader consists of two different tools:
+ the upload form and the server to glue everything together  </description>
     </item>
     
     <item>
@@ -34,7 +34,7 @@ The OAM uploader consists of three different tools:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/uploader/api-server/</guid>
-      <description>The API server handles everything related to imagery upload, from user tokens to the actual uploads and processing.
+      <description>The API server handles everything related to imagery upload: actual uploads and processing.
 Upload To be developed. Good things come to those who wait&amp;hellip;
 Processing To be developed. Good things come to those who wait&amp;hellip;
 Further documentation Check out the full API documentation for information on the imagery upload related endpoints.
@@ -48,7 +48,7 @@ Source code and development The oam-uploader-api is completely open source and t
       
       <guid>/ecosystem/catalog-group/</guid>
       <description>Catalog Components Components that index and serve imagery metadata. The Open Imagery Network (OIN) specification allows providers to annotate their imagery with metadata and register them to the network in a standard way. The OAM Catalog is a collection of OIN spec&amp;rsquo;d metadata.
-OAM API The OAM API in the main component of this group. It contains two sub-components that work together to provide imagery metadata to users: The worker and the catalog API.</description>
+OAM API The OAM API is the main component of this group. It contains two sub-components that work together to provide imagery metadata to users: The worker and the catalog API.</description>
     </item>
     
     <item>
@@ -58,7 +58,8 @@ OAM API The OAM API in the main component of this group. It contains two sub-com
       
       <guid>/ecosystem/contributors-group/</guid>
       <description>Contributor Components Components that allow a contributor to add data to the system through an upload form. The data is added to the HOTOSM imagery bucket. Contributors with a large amount of imagery should consider setting up their own imagery bucket within the OIN network.
-OAM Uploader A web form that a contributor can use to add datasets to OpenAerialMap. This form requires an access token for authorization, which can be requested from an OpenAerialMap team member.</description>
+OAM Uploader A web form that a contributor can use to add datasets to OpenAerialMap.
+ Link to Github Link to Documentation  OAM Uploader API The OAM Uploader API is built using two sub-components.</description>
     </item>
     
     <item>
@@ -105,25 +106,13 @@ See oam-server-tiler, oam-server-api, and oam-server-cli for details on the OAM 
     </item>
     
     <item>
-      <title>Token Manager</title>
-      <link>/uploader/token-manager/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/uploader/token-manager/</guid>
-      <description>The token is a hexadecimal access code that allows the upload of imagery to the OAM database. Administrators can create and manage tokens using the admin interface.
-Since tokens are not tied to a specific user, a description allows the admin to keep track of the purpose of each one.
-Tokens can have an expiracy date, a feature that is useful if the token is being generated, for example, for a mapping event.</description>
-    </item>
-    
-    <item>
       <title>Uploader Form</title>
       <link>/uploader/uploader-form/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/uploader/uploader-form/</guid>
-      <description>The upload form is the way for users to contribute to the OAM imagery database.
-Token Users need a valid token to submit imagery. This helps the OAM team ensure the quality of the submitted materials.
-The token can be requested either by email or through a github issue. When done via the &amp;ldquo;Request token&amp;rdquo; button on the upload form the email/issue will have a template prompting the user for all the needed information.</description>
+      <description>The upload form is the way for users to contribute to the OAM imagery database. Besides uploading the imagery itself, contributors need to provide metadata for imagery datasets. There are two types of fields for filling in the metadata: fields for input values (Title, Sensor, Provider, Tags, Contact info) and fields with choices (Platform, Date start, Date end, Contact, License).
+Also, there is an opportunity to upload several imagery datasets by clicking on the &amp;ldquo;New dataset&amp;rdquo; button.</description>
     </item>
     
     <item>

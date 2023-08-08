@@ -23,7 +23,7 @@ OpenAerialMap relies on a set of open source tools to accomplish its goals. Thes
       
       <guid>/ecosystem/catalog-group/</guid>
       <description>Catalog Components Components that index and serve imagery metadata. The Open Imagery Network (OIN) specification allows providers to annotate their imagery with metadata and register them to the network in a standard way. The OAM Catalog is a collection of OIN spec&amp;rsquo;d metadata.
-OAM API The OAM API in the main component of this group. It contains two sub-components that work together to provide imagery metadata to users: The worker and the catalog API.</description>
+OAM API The OAM API is the main component of this group. It contains two sub-components that work together to provide imagery metadata to users: The worker and the catalog API.</description>
     </item>
     
     <item>
@@ -33,7 +33,8 @@ OAM API The OAM API in the main component of this group. It contains two sub-com
       
       <guid>/ecosystem/contributors-group/</guid>
       <description>Contributor Components Components that allow a contributor to add data to the system through an upload form. The data is added to the HOTOSM imagery bucket. Contributors with a large amount of imagery should consider setting up their own imagery bucket within the OIN network.
-OAM Uploader A web form that a contributor can use to add datasets to OpenAerialMap. This form requires an access token for authorization, which can be requested from an OpenAerialMap team member.</description>
+OAM Uploader A web form that a contributor can use to add datasets to OpenAerialMap.
+ Link to Github Link to Documentation  OAM Uploader API The OAM Uploader API is built using two sub-components.</description>
     </item>
     
     <item>

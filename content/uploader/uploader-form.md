@@ -19,7 +19,7 @@ Also, there is an opportunity to upload several imagery datasets by clicking on 
 
 ## Contributing
 
-In order to upload imagery to OAM, you have two options for storing your files. One option is to have your files stored in a publicly accessible location, which means they cannot be stored only on your computer but need to be stored in a location that allows downloads. Services like [Dropbox](https://www.dropbox.com) and [Google Drive](https://drive.google.com) provide easy-to-use file storage with methods for public sharing.
+In order to upload imagery to OAM, you have two options for storing your files. One option is to have your files stored in a publicly accessible location, which means they cannot be stored only on your computer but need to be stored in a location that allows downloads. Services like [Dropbox](https://www.dropbox.com) provide easy-to-use file storage with methods for public sharing.
 Alternatively, you can also upload files directly from your local device. This means you can select and upload files that are stored on your computer without the need for them to be in a publicly accessible location.
 
 ### via Dropbox
@@ -30,7 +30,7 @@ Select Dropbox as your Imagery Location, and Dropbox will open a dialog box to a
 
 Please be aware that Dropbox automatically turns on file sharing for each file selected temporarily.
 
-### via Google Drive
+<!-- ### via Google Drive
 
 You can connect your Google Drive folder and individually select files to be uploaded. In order for OAM to download the file from Google Drive, each file must have sharing settings that allow the file to be publicly viewable. Follow these steps if the file does not have sharing turned on: 
 
@@ -41,7 +41,7 @@ You can connect your Google Drive folder and individually select files to be upl
 5. Select "On - Public on the web" or "On - Anyone with the link" to enable public sharing
 6. Ensure "Access:Anyone (no sign-in required)" is set to "Can View"
 
-Read more on the [Google Drive support forum](https://support.google.com/drive/answer/2494822?hl=en&ref_topic=7000947).
+Read more on the [Google Drive support forum](https://support.google.com/drive/answer/2494822?hl=en&ref_topic=7000947). -->
 
 ### via public URL
 

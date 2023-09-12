@@ -25,8 +25,10 @@ The mosaic layer will only render imagery that has been processed and is availab
 
 The mosaic layer will be **hidden** under the following conditions:
 
-  * Filters are applied
   * Imagery are selected
+  * Imagery resolution is lower than current zoom
+
+> The mosaic layer will be **visible** despite the selected filters when the zoom value is lower than 10.
 
 # Source code and development
 The `oam-browser` is completely open source and the [code and instructions](https://github.com/hotosm/oam-browser) are available on github under the **BSD 3-Clause license**.

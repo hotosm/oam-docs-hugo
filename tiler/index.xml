@@ -13,7 +13,8 @@
       
       <guid>/tiler/tiler/</guid>
       <description>The Tiler is the tool and API to generate tiled map service endpoints from OAM imagery.
-See oam-server-tiler, oam-server-api, and oam-server-cli for details on the OAM Tiler components.</description>
+See oam-server-tiler, oam-server-api, and oam-server-cli for details on the OAM Tiler components.
+The OpenAerialMap Mosaic has documentation for filtering the mosaic as Swagger.</description>
     </item>
     
   </channel>

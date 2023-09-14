@@ -169,8 +169,8 @@
   
   <div>
     
-    <a href="https://github.com/hotosm/oam-docs-hugo/commit/a34234025da033acbf49b11f5432f2ad9d7a302a" class="sub-title sub-title-14" title='Last modified March 29, 2023 by dqunbp' target="_blank" rel="noopener">
-      Last modified: March 29, 2023
+    <a href="https://github.com/hotosm/oam-docs-hugo/commit/b35c8a781f4a5317aa8df54108588f12c095ecf0" class="sub-title sub-title-14" title='Last modified September 12, 2023 by dqunbp' target="_blank" rel="noopener">
+      Last modified: September 12, 2023
     </a>
   </div>
   
@@ -190,9 +190,12 @@ It features an interactive grid that simplifies the process of finding imagery f
 <h2 id="visibility-conditions">Visibility conditions</h2>
 <p>The mosaic layer will be <strong>hidden</strong> under the following conditions:</p>
 <ul>
-<li>Filters are applied</li>
 <li>Imagery are selected</li>
+<li>Imagery resolution is lower than current zoom</li>
 </ul>
+<blockquote>
+<p>The mosaic layer will be <strong>visible</strong> despite the selected filters when the zoom value is lower than 9.</p>
+</blockquote>
 <h1 id="source-code-and-development">Source code and development</h1>
 <p>The <code>oam-browser</code> is completely open source and the <a href="https://github.com/hotosm/oam-browser">code and instructions</a> are available on github under the <strong>BSD 3-Clause license</strong>.</p>
 </div>

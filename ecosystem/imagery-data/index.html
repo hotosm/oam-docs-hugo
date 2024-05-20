@@ -49,20 +49,20 @@
     
         <div class="
         
-        accordion accordion--closed
+        accordion accordion--open
         
         ">
             Ecosystem
         </div>
         <div class="panel
         
-        panel--closed
+        panel--open
         ">
                 <ul class="page-list">
                     
                         <li class="page"><a href="../../ecosystem/getting-started/" class="menu-link">Getting Started</a></li>
                     
-                        <li class="page"><a href="../../ecosystem/imagery-data/" class="menu-link">Data Structure</a></li>
+                        <li class="page"><a href="../../ecosystem/imagery-data/" class="menu-link menu-link--active">Data Structure</a></li>
                     
                         <li class="page"><a href="../../ecosystem/catalog-group/" class="menu-link">Catalog Group</a></li>
                     
@@ -113,18 +113,18 @@
     
         <div class="
         
-        accordion accordion--open
+        accordion accordion--closed
         
         ">
             Uploader
         </div>
         <div class="panel
         
-        panel--open
+        panel--closed
         ">
                 <ul class="page-list">
                     
-                        <li class="page"><a href="../../uploader/getting-started/" class="menu-link menu-link--active">Getting Started</a></li>
+                        <li class="page"><a href="../../uploader/getting-started/" class="menu-link">Getting Started</a></li>
                     
                         <li class="page"><a href="../../uploader/api-server/" class="menu-link">Api Server</a></li>
                     
@@ -171,32 +171,49 @@
   
   <div>
     
-    <a href="https://github.com/hotosm/oam-docs-hugo/commit/e53b8cc6c3120f09ebfa657ec39c68a92e842707" class="sub-title sub-title-14" title='Last modified August 2, 2023 by dqunbp' target="_blank" rel="noopener">
-      Last modified: August 2, 2023
+    <a href="https://github.com/hotosm/oam-docs-hugo/commit/67541d145f45aa88d91c99b6dccfb2e985ccd94b" class="sub-title sub-title-14" title='Last modified May 20, 2024 by DK Benjamin' target="_blank" rel="noopener">
+      Last modified: May 20, 2024
     </a>
   </div>
   
 </div>
 </div>
     <div class="article-body">
-           <h1 class="page-title">Getting Started</h1><h2 id="openaerialmap-uploader">OpenAerialMap Uploader</h2>
-<p>The OAM imagery database is made up of the contributions of users.</p>
-<p>Learn more about <a href="../../uploader/uploader-form/">how to upload</a>.</p>
-<p>The OAM uploader consists of two different tools:</p>
-<ul>
-<li>the upload form</li>
-<li>and the server to glue everything together</li>
-</ul>
+           <h1 class="page-title">Data Structure</h1><h2 id="openaerialmap-data-layout-and-structure">OpenAerialMap Data Layout and Structure</h2>
+<p>The imagery data that is uploaded to OAM is processed and stored into an AWS S3 Bucket with the following structure</p>
+<pre tabindex="0"><code>&lt;SceneID&gt;/&lt;UploadNum&gt;/...
+</code></pre><p>Each folder contains the following files:</p>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><!-- raw HTML omitted -->_meta.json</td>
+<td>File metadata json file</td>
+</tr>
+<tr>
+<td><!-- raw HTML omitted -->.json</td>
+<td>Image metadata json file</td>
+</tr>
+<tr>
+<td><!-- raw HTML omitted -->.png</td>
+<td>Thumbnail png</td>
+</tr>
+<tr>
+<td><!-- raw HTML omitted -->.tif</td>
+<td>Cloud Optimized GeoTIFF</td>
+</tr>
+</tbody>
+</table>
+<p>Some older uploads also contain .msk and .vrt files as well.</p>
 </div>
 
 
 
-
-    
-
-    
-
-    
 
     
      
@@ -204,15 +221,21 @@
 
     
 
+    
+
+    
+
+    
 
 
 
 
 
-<a class="next-page" href="../../uploader/api-server/">
+
+<a class="next-page" href="../../ecosystem/catalog-group/">
     <div class="next-page__container">
             <div class="sub-title sub-title-10">READ NEXT</div>
-            <div class="next-title">Api Server</div>
+            <div class="next-title">Catalog Group</div>
     </div>
     <img src="../../svg/forward-arrow.svg" alt="">
 </a>
@@ -228,17 +251,17 @@
         <h4 class="sub-title sub-title-10">ON THIS PAGE</h4>
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#openaerialmap-uploader">OpenAerialMap Uploader</a></li>
+    <li><a href="#openaerialmap-data-layout-and-structure">OpenAerialMap Data Layout and Structure</a></li>
   </ul>
 </nav>
     </div>
     <hr class="toc-divider">
     
     
-    <a href="https://github.com/hotosm/oam-docs-hugo/edit/master/content/uploader/getting-started.md" class="sub-title sub-title-12 toc-item"> <img src="../../svg/pencil.svg" class="edit-icon" alt="">Edit this page on Github</a>
+    <a href="https://github.com/hotosm/oam-docs-hugo/edit/master/content/ecosystem/imagery-data.md" class="sub-title sub-title-12 toc-item"> <img src="../../svg/pencil.svg" class="edit-icon" alt="">Edit this page on Github</a>
     <a 
     
-    href="../../pdfs/getting-started.pdf"
+    href="../../pdfs/imagery-data.pdf"
     
     class="sub-title sub-title-12 toc-item"> <img src="../../svg/download.svg" class="download-icon" alt="">Download this page</a>
 </div></aside>

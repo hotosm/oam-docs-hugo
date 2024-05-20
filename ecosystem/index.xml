@@ -17,6 +17,17 @@ OpenAerialMap relies on a set of open source tools to accomplish its goals. Thes
     </item>
     
     <item>
+      <title>Data Structure</title>
+      <link>/ecosystem/imagery-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/ecosystem/imagery-data/</guid>
+      <description>OpenAerialMap Data Layout and Structure The imagery data that is uploaded to OAM is processed and stored into an AWS S3 Bucket with the following structure
+&amp;lt;SceneID&amp;gt;/&amp;lt;UploadNum&amp;gt;/... Each folder contains the following files:
+   File Description     _meta.json File metadata json file   .json Image metadata json file   .png Thumbnail png   .tif Cloud Optimized GeoTIFF    Some older uploads also contain .</description>
+    </item>
+    
+    <item>
       <title>Catalog Group</title>
       <link>/ecosystem/catalog-group/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

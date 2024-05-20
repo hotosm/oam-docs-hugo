@@ -14,10 +14,10 @@ Each folder contains the following files:
 
 | File        | Description |
 | ----------- | ----------- |
-| <ImageID>_meta.json	     | File metadata json file |
-| <ImageID>.json	   | Image metadata json file      |
-| <ImageID>.png	     | Thumbnail png                 |
-| <ImageID>.tif      | Cloud Optimized GeoTIFF       |
+| `<ImageID>_meta.json`	     | File metadata json file |
+| `<ImageID>.json`	   | Image metadata json file      |
+| `<ImageID>.png`	     | Thumbnail png                 |
+| `<ImageID>.tif`      | Cloud Optimized GeoTIFF       |
 
 Some older uploads also contain .msk and .vrt files as well. 
 

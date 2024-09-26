@@ -13,7 +13,7 @@ The OAM search interface focuses on two main core functions:
   1. Searching by location and metadata
   2. Using available imagery
 
-OAM can be used within any modern browser (Chrome, Firefox, IE 10+). Older versions of Internet Explorer may have limited functionality and are not fully supported. 
+OAM can be used within any modern browser (Chrome, Firefox, Edge). 
 
 # Searching by location
 
@@ -39,8 +39,33 @@ When an image has been found and has an available map layer, you can use the dro
 
 # Downloading imagery
 
-Use the Download button to download the raw imagery. File size is listed in the additional metadata information below the image preview in the sidebar.
+Use the Download button to download the raw imagery in GeoTIFF format. File size is listed in the additional metadata information below the image preview in the sidebar.
 
 
 ![](/content/browser/download.png)
 
+
+# Using imagery in QGIS
+
+By clicking on the TMS or WMTS button it is possible to copy links to each Web service and use them to access imagery directly in QGIS.
+
+
+![](/content/browser/tms-wmts.jpg)
+
+
+In QGIS, from the "Layer" menu, choose "Add Layer" and then "Add XYZ Layer"
+
+
+![](/content/browser/qgis-add-tms.jpg)
+
+
+In the "Data Source Manager | XYZ" window click on "New". In the pop-up window choose a name for the image and paste the TMS copied from OAM in the URL box. Consider increasing the Max Zoom level value to 21 if you're adding a very high resolution image.
+
+
+![](/content/browser/qgis-add-tms-link.jpg)
+
+
+Click OK, and then Add. The image will be displayed in the map as a new TMS/XYZ image layer
+
+
+![](/content/browser/qgis-display-tms.jpg)

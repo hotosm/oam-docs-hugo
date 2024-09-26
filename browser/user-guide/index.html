@@ -171,8 +171,8 @@
   
   <div>
     
-    <a href="https://github.com/hotosm/oam-docs-hugo/commit/e53b8cc6c3120f09ebfa657ec39c68a92e842707" class="sub-title sub-title-14" title='Last modified August 2, 2023 by dqunbp' target="_blank" rel="noopener">
-      Last modified: August 2, 2023
+    <a href="https://github.com/hotosm/oam-docs-hugo/commit/42db55e730ed0eb93aca529aaa896f2d0c8d032d" class="sub-title sub-title-14" title='Last modified September 26, 2024 by Cristiano Giovando' target="_blank" rel="noopener">
+      Last modified: September 26, 2024
     </a>
   </div>
   
@@ -186,7 +186,7 @@
 <li>Searching by location and metadata</li>
 <li>Using available imagery</li>
 </ol>
-<p>OAM can be used within any modern browser (Chrome, Firefox, IE 10+). Older versions of Internet Explorer may have limited functionality and are not fully supported.</p>
+<p>OAM can be used within any modern browser (Chrome, Firefox, Edge).</p>
 <h1 id="searching-by-location">Searching by location</h1>
 <p>When first visiting the application, initial search can be accomplished by typing the location of an area into the search box.</p>
 <p><img src="../../content/browser/search-bar.png" alt=""></p>
@@ -197,8 +197,17 @@
 <p>When an image has been found and has an available map layer, you can use the dropdown menu to open the map layer up in an OpenStreetMap editor like iD or JOSM.</p>
 <p><img src="../../content/browser/josm.png" alt=""></p>
 <h1 id="downloading-imagery">Downloading imagery</h1>
-<p>Use the Download button to download the raw imagery. File size is listed in the additional metadata information below the image preview in the sidebar.</p>
+<p>Use the Download button to download the raw imagery in GeoTIFF format. File size is listed in the additional metadata information below the image preview in the sidebar.</p>
 <p><img src="../../content/browser/download.png" alt=""></p>
+<h1 id="using-imagery-in-qgis">Using imagery in QGIS</h1>
+<p>By clicking on the TMS or WMTS button it is possible to copy links to each Web service and use them to access imagery directly in QGIS.</p>
+<p><img src="../../content/browser/tms-wmts.jpg" alt=""></p>
+<p>In QGIS, from the &ldquo;Layer&rdquo; menu, choose &ldquo;Add Layer&rdquo; and then &ldquo;Add XYZ Layer&rdquo;</p>
+<p><img src="../../content/browser/qgis-add-tms.jpg" alt=""></p>
+<p>In the &ldquo;Data Source Manager | XYZ&rdquo; window click on &ldquo;New&rdquo;. In the pop-up window choose a name for the image and paste the TMS copied from OAM in the URL box. Consider increasing the Max Zoom level value to 21 if you&rsquo;re adding a very high resolution image.</p>
+<p><img src="../../content/browser/qgis-add-tms-link.jpg" alt=""></p>
+<p>Click OK, and then Add. The image will be displayed in the map as a new TMS/XYZ image layer</p>
+<p><img src="../../content/browser/qgis-display-tms.jpg" alt=""></p>
 </div>
 
 

@@ -50,7 +50,3 @@ If you have files stored in another location, copy and paste the full URL (inclu
 ### via Local Device
 
 Users can also upload imagery from their local devices. The system suggests files in `TIFF` and `TIF` formats by default. To initiate the upload, select the desired files from your device and then submit the form. Once submitted, the uploading process will begin.
-
-
-## Source code and development
-The `oam-uploader` is completely open source and the [code and instructions](https://github.com/hotosm/oam-uploader) are available on github under the **BSD 3-Clause license**.
